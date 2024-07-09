@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/zhulinghao/dev_ohters/wasm-memory-demo/wasm-learn/implement-c-api-in-js",
+      "program": "/Users/zhulinghao/dev_ohters/wasm-memory-demo/wasm-learn/implement-c-api-in-js/build/Debug/outDebug"
+    }
+  ]
+}

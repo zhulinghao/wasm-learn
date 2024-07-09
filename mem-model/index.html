@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    Module = {};
+    Module.onRuntimeInitialized = function () {
+      let ptr = Module._xmalloc(5000);
+      console.log('ptr: ', ptr);
+
+      let ptr2 = Module._xmalloc(10000);
+      console.log('ptr2: ', ptr2);
+      Module._xfree(ptr);
+      let ptr3 = Module._xmalloc(10000);
+      console.log('ptr3: ', ptr3);
+
+      let ptr4 = Module._xmalloc(100);
+      console.log('ptr4: ', ptr4);
+    }
+  </script>
+  <script src="./mem.js"></script>
+</head>
+
+<body>
+
+</body>
+
+</html>
